@@ -1,8 +1,43 @@
+################################################################################
+#
+# This is my docker-compose file!
+#
+# The purpose of this is to help make it easy to get up and running locally. It
+# isn't suitable for a deployment configuration - I'll try to encode deployment
+# into GitHub Actions or something, and config separately per deployment target.
+# I haven't chosen deployment targets yet, but I'm thinking heroku or something
+# similar. Maybe Netlify if I have any static sites (I probably will!)
+#
+# Since the configs below are mainly for development containers, I'll be adding
+# cached volumes to allow changes made inside the container to affect the files
+# on the host system, so they can be checked in.
+#
+# TODO Add Hugo Blog Repository, plus its history.
+#
+################################################################################
+
 version: "3"
 services:
-  dynamic-blog:
+  ##############################################################################
+  # Django-CMS Site, just for giggles.
+  ##############################################################################
+  django-cms-db:
+    # Use Postgres 11 for compatibility with hosted postgres solutions widely
+    # available at the time of this writing.
+    # https://hub.docker.com/_/postgres/
+    image: postgres:11
+    environment:
+      - POSTGRES_USER=dj_cms_user
+      - POSTGRES_PASSWORD=dj_cms_pwd
+      - POSTGRES_DB=dj_cms_site
+
+  django-cms:
     build: ./dynamic_blog
-    command: python manage.py runserver 0.0.0.0:8000
+    command: |
+      python manage.py migrate
+      python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - django-cms-db
     volumes:
       - ./dynamic_blog:/dynamic_blog:cached
     ports:
