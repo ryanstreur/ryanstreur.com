@@ -1,0 +1,9 @@
+version: "3"
+services:
+  dynamic-blog:
+    build: ./dynamic_blog
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./dynamic_blog:/dynamic_blog:cached
+    ports:
+      - "8000:8000"
