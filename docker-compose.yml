@@ -33,8 +33,7 @@ services:
 
   django-cms:
     build: ./dynamic_blog
-    command: |
-      python manage.py migrate
+    command: python manage.py migrate && \
       python manage.py runserver 0.0.0.0:8000
     depends_on:
       - django-cms-db
@@ -42,3 +41,27 @@ services:
       - ./dynamic_blog:/dynamic_blog:cached
     ports:
       - "8000:8000"
+
+  ##############################################################################
+  #
+  # I really like Elixir. Wish it was a little easier to work with, and wish it
+  # had a few more libraries, but whatayagonnado
+  #
+  ##############################################################################
+  tikkun-db:
+    image: postgres:11
+    environment:
+      - POSTGRES_USER=phx_user
+      - POSTGRES_PASSWORD=phx_pwd
+      - POSTGRES_DB=tikkun_dev
+
+  tikkun:
+    build: tikkun
+    working_dir: /tikkun
+    command: mix phx.server
+    volumes:
+      - ./tikkun:/tikkun:cached
+    depends_on:
+      - tikkun-db
+    ports:
+      - "4000:4000"
