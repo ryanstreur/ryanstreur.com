@@ -1,0 +1,81 @@
+education:
+  - B.A. - Biology, Reed College 2014
+  - Certificate of Web Development - Epicodus, 2016
+
+skills:
+  proficient:
+    - Communication
+    - Learning
+    - Semantic, well-structured HTML
+    - Styling with CSS and SCSS
+    - JavaScript
+    - Django web framework
+    - Angular, TypeScript
+    - AngularJS
+    - Writing front-end build pipelines with various tools including Webpack, Gulp, Parcel
+  competent:
+    - data visualization using D3 and libraries which use D3 under the hood
+    - reactive programming with RxJS
+    - SQL databases - Postgres and MS SQL Server
+  functional:
+    - using python for data processing with pandas, sometimes with geopandas for geospatial manipulation.
+    - .NET web development using MVC and WebAPI
+
+experience:
+  - position: Data Visualization Software Engineer
+    company: RSG Inc.
+    start: 01/2020
+    end: present
+    responsibilities:
+      - Handle all responsibilities related to developing and supporting an interactive web portal for delivery of the outputs of RSG's passive travel data pipeline.
+      - Modify existing visuals using D3.js and an assortment of JavaScript libraries used by other RSG developers.
+      - Server and database administration for the website project.
+      - Add an admin UI to an existing front-end-only data visualization system.
+      - Project management - communicate with internal stakeholders to assess priorities, feasibility, and estimates for specific work items.
+
+  - position: Software Developer
+    company: BlueVolt
+    start: 07/2019
+    end: 01/2020
+    responsibilities:
+      - Develop new admin dashboard for BlueVolt LMS.
+      - Act as part-time ScrumMaster to facilitate consistent delivery and accurate estimation.
+      - Manage BlueVolt's light AWS environment (S3, CloudFormation).
+
+  - position: Jr. Developer
+    company: BlueVolt
+    start: 07/2017
+    end: 07/2019
+    responsibilities:
+      - Contribute to development and maintenance of the BlueVolt LMS using Angular, AngularJS, .NET Framework, .NET Core, and SQL Server.
+      - Use the Scrum framework to plan, track, and review work.
+
+  - position: Development Intern
+    company: BlueVolt
+    start: 01/2017
+    end: 07/2017
+    responsibilities:
+      - Help build new AngularJS front-end for BlueVolt's .NET Webforms and MVC Learning Management System.
+
+  - position: Development Intern
+    company: Recentia Health
+    start: 10/2016
+    end: 11/2016
+    responsibilities:
+      - Create demo data visualizations in D3 and Angular based on models drawn from Recentia's electronic health record schema.
+
+  - position: Software Engineering Fellow
+    company: Hatch Innovation
+    start: 08/2016
+    end: 02/2017
+    responsibilities:
+      - Help local coworking-space nonprofit write a Django REST Framework API for their WordPress-powered crowdfunding offering.
+
+  - position: Radio Producer, promoted from Public Affairs Intern
+    company: XRAY FM
+    start: 08/2015
+    end: 05/2016
+    responsibilities:
+      - Book guests
+      - Research news stories, write broadcast-ready news copy
+      - Eventually, manage a team of five interns to handle all production duties for a two-hor daily drive-time talk show.

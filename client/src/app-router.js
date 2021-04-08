@@ -1,25 +1,18 @@
 import { h } from 'vue'
+import { createWebHistory, createRouter } from 'vue-router';
 
 import HomeComponent from './routes/Home.vue'
+import ParticleTest from './routes/ParticleTest.vue'
 
-const routes = {
-  '/': HomeComponent,
-}
-
-const AppRouter = {
-  data: () => ({
-    currentRoute: window.location.pathname
-  }),
-
-  computed: {
-    CurrentComponent() {
-      return routes[this.currentRoute] || NotFoundComponent
-    }
-  },
-
-  render() {
-    return h(this.CurrentComponent)
+const routes = [
+  {
+    path: '/', component: HomeComponent
+  }, {
+    path: '/particle', component: ParticleTest
   }
-}
+]
 
-export default AppRouter
+export const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
