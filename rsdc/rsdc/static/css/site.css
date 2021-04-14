@@ -1,0 +1,127 @@
+body {
+  background-color: black;
+  color: lightgray;
+  font-family: Baskerville;
+  font-size: 18pt;
+  margin: 0;
+  display: grid;
+}
+
+article {
+  max-width: 70ch;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+
+.bg-color {
+  background-color: black;
+}
+
+.stick-to-top {
+  position: sticky;
+  top: 0;
+}
+
+header.stick-to-top {
+  top: 2.2em;
+}
+
+/* https://every-layout.dev/layouts/stack/ */
+.stack > * + * {
+  margin-top: 1.5rem;
+}
+
+nav {
+  margin: 0;
+}
+
+nav .active {
+  background-color: #151515;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nav-title {
+  display: block;
+}
+
+nav,
+main {
+  padding: 0.5em;
+}
+
+.page-list {
+  list-style: none;
+  padding: 0;
+}
+
+.page-list-date {
+  display: block;
+}
+
+#TableOfContents > ul {
+  margin: 0;
+}
+
+#TableOfContents ul {
+  list-style: none;
+}
+
+.print-only {
+  display: none;
+}
+
+th {
+  font-weight: normal;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+body {
+  grid-template-columns: 24ch auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "title header"
+    "nav main"
+    "footer footer";
+}
+
+.nav-title {
+  grid-area: title;
+  text-align: center;
+  vertical-align: middle;
+  justify-self: stretch;
+}
+
+nav {
+  grid-area: nav;
+}
+
+header {
+  grid-area: header;
+}
+
+header.stick-to-top {
+  top: 0;
+}
+
+main {
+  grid-area: main;
+}

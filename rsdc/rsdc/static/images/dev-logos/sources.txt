@@ -1,0 +1,21 @@
+Angular Image: Angular Press Kit
+Clojure_logo.svg: https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png
+C_Sharp_wordmark.svg: https://en.wikipedia.org/wiki/File:C_Sharp_wordmark.svg inverted with https://pinetools.com/invert-image-colors
+Golang.png: https://commons.wikimedia.org/wiki/File:Golang.png: https://commons.wikimedia.org/wiki/File:Golang.png, inverted with https://pinetools.com/invert-image-colors
+HTML5 Logo.svg: https://www.w3.org/html/logo/downloads/HTML5_Logo.svg
+JavaScript-logo.png: https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png
+Haskell-Logo.svg: https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg
+
+NET_logo.png: https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_.NET_logo.png
+
+kubernetes_logo.svg: https://github.com/kubernetes/kubernetes/blob/master/logo/logo.svg
+
+Python Logo license info https://www.python.org/community/logos/
+Python-logo-notext.svg: https://commons.wikimedia.org/wiki/File:Python-logo-notext.svg
+
+Erlang_logo.svg: https://commons.wikimedia.org/wiki/File:Erlang_logo.svg
+CSS3 Logo https://commons.wikimedia.org/w/index.php?search=css3&title=Special%3ASearch&go=Go&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1#/media/File:Devicon-css3-plain.svg
+Docker Logo: https://commons.wikimedia.org/wiki/File:Docker_(container_engine)_logo.svg
+Git_icon.svg: https://commons.wikimedia.org/wiki/Category:Git_logos#/media/File:Git_icon.svg
+
+PostgreSQL_logo.svg: https://wiki.postgresql.org/wiki/File:PostgreSQL_logo.3colors.svg

@@ -1,0 +1,36 @@
+body {
+  display: block;
+  width: 8.5in;
+  height: 11in;
+  margin: 0;
+  padding: 0.55in;
+  background-color: white;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  padding: 0;
+}
+
+a,
+body,
+.bg-color {
+  color: black;
+  background-color: white;
+}
+
+.print-only {
+  display: unset;
+}
+
+.print-hide {
+  display: none;
+}
+
+.stick-to-top {
+  position: unset;
+  top: unset;
+}

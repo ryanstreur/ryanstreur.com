@@ -96,6 +96,21 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "pagedown.apps.PagedownConfig",
     'markdownify.apps.MarkdownifyConfig',
+
+    'wagtail.contrib.forms',
+    'wagtail.contrib.redirects',
+    'wagtail.embeds',
+    'wagtail.sites',
+    'wagtail.users',
+    'wagtail.snippets',
+    'wagtail.documents',
+    'wagtail.images',
+    'wagtail.search',
+    'wagtail.admin',
+    'wagtail.core',
+
+    'modelcluster',
+    'taggit',
 ]
 
 LOCAL_APPS = [
@@ -159,6 +174,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.common.BrokenLinkEmailsMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'wagtail.contrib.redirects.middleware.RedirectMiddleware',
 ]
 
 # STATIC
@@ -339,3 +355,5 @@ MARKDOWNIFY = {
       "WHITELIST_TAGS": ["a", "p", "h1", ]
    },
 }
+
+WAGTAIL_SITE_NAME = 'ryanstreur.com'

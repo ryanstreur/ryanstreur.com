@@ -1,1 +1,209 @@
 {% extends "base.html" %}
+{% load static %}
+
+
+{% block main %}
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<article>
+  <p>
+    My name's Ryan, and I wanted my own little place on the internet.
+    Think of this site as the barber's hair.
+  </p>
+  <h2>I'm most comfortable with</h2>
+  <div class="home-icon-list">
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static 'images/dev-logos/JavaScript-logo.png' %}"
+        class="icon-img"
+        alt="JavaScript"
+      />
+    </a>
+    <a
+      href="https://angularjs.org/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/AngularJS-Shield.svg' %}"
+        class="icon-img"
+        alt="AngularJS"
+      />
+    </a>
+    <a
+      href="https://angular.io/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/angular.svg' %}"
+        class="icon-img"
+        alt="Angular"
+      />
+    </a>
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/HTML5 Logo.svg' %}"
+        class="icon-img"
+        alt="HTML 5"
+      />
+    </a>
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/css3-plain.svg' %}"
+        class="icon-img"
+        alt="CSS 3"
+      />
+    </a>
+    <a
+      href="https://git-scm.com/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/Git_icon.svg' %}"
+        class="icon-img"
+        alt="CSS 3"
+      />
+    </a>
+  </div>
+  <h2>I can tinker effectively with</h2>
+  <div class="home-icon-list">
+    <a
+      href="https://nodejs.org/en/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/Node.js_logo.svg' %}"
+        class="icon-img"
+        alt="Node.JS"
+      />
+    </a>
+    <a
+      href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/C_Sharp_wordmark-inverted.png' %}"
+        class="icon-img"
+        alt="C#"
+      />
+    </a>
+    <a
+      href="https://dotnet.microsoft.com/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/Microsoft_.NET_logo.png' %}"
+        class="icon-img"
+        alt="dotnet"
+      />
+    </a>
+    <a
+      href="https://www.python.org/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/Python-logo-notext.svg' %}"
+        class="icon-img"
+        alt="Python"
+      />
+    </a>
+    <a
+      href="https://www.postgresql.org/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/PostgreSQL_logo.svg' %}"
+        class="icon-img"
+        alt="PostgreSQL"
+      />
+    </a>
+  </div>
+  <h2>
+    I think it's cool but I'm a novice
+  </h2>
+  <div class="home-icon-list">
+    <a
+      href="https://elm-lang.org/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Elm_logo.svg"
+        class="icon-img"
+      />
+    </a>
+    <a
+      href="https://golang.org/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/Golang-inverted.png' %}"
+        class="icon-img"
+      />
+    </a>
+    <a
+      href="https://clojure.org/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/Clojure_logo.svg' %}"
+        class="icon-img"
+      />
+    </a>
+    <a
+      href="https://www.haskell.org/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/Haskell-Logo.svg' %}"
+        class="icon-img"
+      />
+    </a>
+    <a
+      href="https://kubernetes.io/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/kubernetes_logo.svg' %}"
+        class="icon-img"
+      />
+    </a>
+    <a
+      href="https://www.erlang.org/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/Erlang_logo.svg' %}"
+        class="icon-img"
+      />
+    </a>
+    <a
+      href="https://www.docker.com/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/Docker_logo.svg' %}"
+        class="icon-img"
+        alt="Docker"
+      />
+    </a>
+    <a
+      href="https://elixir-lang.org/"
+      class="home-icon-list-link"
+    >
+      <img
+        src="{% static '/images/dev-logos/elixir.png' %}"
+        class="icon-img"
+        alt="Elixir"
+      />
+    </a>
+  </div>
+</article>
+
+{% endblock %}
