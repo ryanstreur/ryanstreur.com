@@ -17,6 +17,7 @@ urlpatterns = [
     # User management
     path("users/", include("rsdc.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
+    path("blog/", include('rsdc.blog.urls', namespace="blog")),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 if settings.DEBUG:

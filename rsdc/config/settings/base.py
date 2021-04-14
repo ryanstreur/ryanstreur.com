@@ -94,11 +94,13 @@ THIRD_PARTY_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     "corsheaders",
+    "pagedown.apps.PagedownConfig",
+    'markdownify.apps.MarkdownifyConfig',
 ]
 
 LOCAL_APPS = [
     "rsdc.users.apps.UsersConfig",
-    # Your stuff: custom apps go here
+    "rsdc.blog.apps.BlogConfig",
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -239,7 +241,7 @@ X_FRAME_OPTIONS = "DENY"
 # https://docs.djangoproject.com/en/dev/ref/settings/#email-backend
 EMAIL_BACKEND = env(
     "DJANGO_EMAIL_BACKEND",
-    default="django.core.mail.backends.smtp.EmailBackend",
+    default="django.core.mail.backends.console.EmailBackend",
 )
 # https://docs.djangoproject.com/en/dev/ref/settings/#email-timeout
 EMAIL_TIMEOUT = 5
@@ -330,3 +332,10 @@ REST_FRAMEWORK = {
 CORS_URLS_REGEX = r"^/api/.*$"
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+
+MARKDOWNIFY = {
+   "default": {
+      "WHITELIST_TAGS": ["a", "p", "h1", ]
+   },
+}
