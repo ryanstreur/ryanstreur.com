@@ -11,3 +11,6 @@ media
 # client
 
 node_modules
+
+# Editor files
+.vscode/settings.json

@@ -1,0 +1,18 @@
+version: "3"
+services:
+  db:
+    # https://hub.docker.com/_/postgres/
+    # https://registry.hub.docker.com/r/postgis/postgis
+    image: postgis/postgis:12-3.1
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=rsdc_user
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=rsdc
+
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
