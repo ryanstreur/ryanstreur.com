@@ -1,0 +1,28 @@
+<h1>Show Experience</h1>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @experience.name %>
+  </li>
+
+  <li>
+    <strong>Description:</strong>
+    <%= @experience.description %>
+  </li>
+
+  <li>
+    <strong>Start date:</strong>
+    <%= @experience.start_date %>
+  </li>
+
+  <li>
+    <strong>End date:</strong>
+    <%= @experience.end_date %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.experience_path(@conn, :edit, @experience) %></span> |
+<span><%= link "Back", to: Routes.experience_path(@conn, :index) %></span>

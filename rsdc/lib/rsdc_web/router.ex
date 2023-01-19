@@ -1,4 +1,5 @@
 defmodule RsdcWeb.Router do
+  alias RsdcWeb.ExperienceController
   use RsdcWeb, :router
 
   import RsdcWeb.UsersAuth
@@ -41,6 +42,7 @@ defmodule RsdcWeb.Router do
     scope "/" do
       pipe_through :browser
 
+      resources "/experience", ExperienceController
       live_dashboard "/dashboard", metrics: RsdcWeb.Telemetry
     end
   end
