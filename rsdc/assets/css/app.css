@@ -1,6 +1,7 @@
 /* This file is for your main application CSS */
 @import "./phoenix.css";
 @import "./reset.css";
+@import "./typography.css";
 
 /* Alerts and form errors used by phx.new */
 .alert {
@@ -155,6 +156,10 @@
  * Custom CSS
  */
 
+main {
+  min-height: 60vh;
+}
+
 body>footer {
   /* https://css-tricks.com/a-clever-sticky-footer-technique/ */
   position: sticky;
@@ -164,4 +169,40 @@ body>footer {
 
 body>footer>a {
   padding: 1em;
+}
+
+/* 
+ * Homepage
+ */
+
+.home__hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.home__hero>section>h1 {
+  font-size: 3rem;
+}
+
+
+.home__link-list {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem;
+}
+
+.home__hero>section>ul>li {
+  list-style: none;
+}
+
+.home__link-logo {
+  padding: 1rem;
+}
+
+.home__link-logo>img {
+  max-height: 3rem;
 }

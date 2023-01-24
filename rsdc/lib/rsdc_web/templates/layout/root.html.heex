@@ -13,7 +13,7 @@
 
 <body>
   <header>
-    <section class="container">
+    <section>
       <nav>
         <ul>
           <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
@@ -24,7 +24,7 @@
         </ul>
         <%= render "_users_menu.html", assigns %>
       </nav>
-      <a href="/" class="phx-logo">
+      <a href="/">
         Ryan Streur
       </a>
     </section>

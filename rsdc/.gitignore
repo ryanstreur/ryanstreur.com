@@ -32,3 +32,5 @@ rsdc-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# Mac OS
+.DS_Store*
