@@ -19,3 +19,25 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Source: https://github.com/phoenixframework/phoenix
 
   * You also need inotify-tools from apt
+
+## Build Notes
+
+Truncated build and deploy process:
+
+```sh
+git pull
+# Add secret env variables, including MIX_ENV=prod
+mix deps.get --only prod
+mix compile
+mix assets.deploy
+mix phx.gen.release
+export PHX_SERVER=true
+_build/prod/rel/rsdc/bin/rsdc daemon
+```
+
+Source:
+
+- [Phoenix: Deploying With Releases](https://hexdocs.pm/phoenix/releases.html)
+- [Mix Release](https://hexdocs.pm/mix/Mix.Tasks.Release.html#module-environment-variables)
+
+- TLS by LetsEncrypt
