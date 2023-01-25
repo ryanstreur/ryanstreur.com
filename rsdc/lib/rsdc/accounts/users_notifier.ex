@@ -8,7 +8,7 @@ defmodule Rsdc.Accounts.UsersNotifier do
     email =
       new()
       |> to(recipient)
-      |> from({"Rsdc", "contact@example.com"})
+      |> from({"Rsdc", "contact@ryanstreur.com"})
       |> subject(subject)
       |> text_body(body)
 
