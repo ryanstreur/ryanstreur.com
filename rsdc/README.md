@@ -32,6 +32,7 @@ mix compile
 mix assets.deploy
 mix phx.gen.release
 export PHX_SERVER=true
+_build/prod/rel/rsdc/bin/rsdc stop
 _build/prod/rel/rsdc/bin/rsdc daemon
 ```
 
