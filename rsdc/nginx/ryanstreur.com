@@ -10,9 +10,9 @@ server {
     include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 
-    # Forward requests to phoenix server running on port 4001
+    # Forward requests to phoenix server running on port 4000
     location / {
-      proxy_pass http://127.0.0.1:4001;
+      proxy_pass http://127.0.0.1:4000;
     }
 
 }
