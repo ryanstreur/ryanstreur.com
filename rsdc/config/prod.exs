@@ -11,9 +11,10 @@ import Config
 # before starting your production server.
 config :rsdc, RsdcWeb.Endpoint,
   cache_static_manifest: "priv/static/cache_manifest.json",
-  url: [host: "ryanstreur.com", port: 443],
+  # The live site uses HTTP behind an nginx reverse proxy for TLS
+  url: [host: "ryanstreur.com", port: 4000],
   https: [
-    port: 443,
+    port: 4043,
     cipher_suite: :strong,
     keyfile: System.get_env("SSL_KEY_FILE"),
     certfile: System.get_env("SSL_KEY_FILE")
