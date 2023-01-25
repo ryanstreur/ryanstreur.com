@@ -160,17 +160,6 @@ main {
   min-height: 60vh;
 }
 
-body>footer {
-  /* https://css-tricks.com/a-clever-sticky-footer-technique/ */
-  position: sticky;
-  top: 100vh;
-}
-
-
-body>footer>a {
-  padding: 1em;
-}
-
 /* 
  * Homepage
  */
