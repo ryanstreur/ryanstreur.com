@@ -195,3 +195,16 @@ main {
 .home__link-logo>img {
   max-height: 3rem;
 }
+
+
+.contact-qr {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-qr>img {
+  max-height: 90vh;
+  max-width: 90vw;
+}

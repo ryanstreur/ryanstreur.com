@@ -22,6 +22,7 @@ defmodule RsdcWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/contact-qr", PageController, :contact
   end
 
   # Other scopes may use custom stacks.
