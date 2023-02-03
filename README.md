@@ -1,5 +1,18 @@
 # ryanstreur.com
 
+Source code for my personal website, as well as a place for me to put my tinkering.
+
+## Purpose
+
+- Personal landing page
+- Showcase professional skills
+- Give people a way to contact me
+
+## Features
+
+- Homepage
+- 
+
 ## Relevant Documentation
 
 - vCard
