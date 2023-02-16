@@ -33,3 +33,7 @@ yarn-error.log*
 
 venv
 __pycache__
+
+# Node
+
+node_modules
