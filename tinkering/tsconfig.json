@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "outDir": "./lib",
-    "rootDir": "./src"
+    "outDir": "./dist",
+    "rootDir": "."
   },
   "include": ["**/*"],
   "exclude": ["node_modules", "__pycache__"]
