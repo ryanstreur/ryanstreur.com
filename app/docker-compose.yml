@@ -1,0 +1,8 @@
+services:
+  client:
+    build: ./client
+    volumes:
+      - ./client/:/client
+    ports:
+      - "5173:5173"
+    command: npm run dev
