@@ -1,0 +1,12 @@
+#social-links {
+    display: flex;
+}
+
+#social-links>a {
+    display: block;
+    padding: 1rem;
+}
+
+#social-links>a>img {
+    height: 2.5rem;
+}

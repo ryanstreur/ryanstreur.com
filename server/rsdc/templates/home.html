@@ -1,8 +1,22 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block title %}Ryan Streur - Home{% endblock %}
+
+{% block extra_head %} 
+  <link rel="stylesheet" href="{% static 'rsdc/css/home.css' %}">
+{% endblock %}
 
 {% block content %}
 <h1>Ryan Streur</h1>
 <p>Software Engineer in the Portland Metro area.</p>
+<section id="social-links">
+  <a href="https://github.com/ryanstreur">
+    <img src="{% static 'rsdc/img/GitHub_Invertocat_White.png' %}" alt="GitHub Icon">
+  </a>
+  <a href="https://www.linkedin.com/in/ryanstreur/">
+    <img src="{% static 'rsdc/img/InBug-White.png' %}" alt="GitHub Icon">
+  </a>
+</section>
 {% endblock %}
