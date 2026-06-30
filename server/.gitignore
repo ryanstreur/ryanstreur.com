@@ -2,4 +2,5 @@ venv
 .venv
 db.sqlite3
 __pycache__
-public
+.env
+.static
