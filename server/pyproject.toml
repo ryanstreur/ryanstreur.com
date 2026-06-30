@@ -7,3 +7,8 @@ dependencies = [
     "django>=6.0.2",
     "twisted[http2,tls]>=26.4.0",
 ]
+
+[dependency-groups]
+dev = [
+    "black>=26.5.1",
+]

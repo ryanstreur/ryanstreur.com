@@ -14,6 +14,7 @@ Including another URLconf
    1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -22,10 +23,12 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 def home(request):
-    return render(request, 'home.html')
+    return render(request, "home.html")
+
 
 urlpatterns = [
     path("", home),
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
 ]
