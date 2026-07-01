@@ -1,10 +1,9 @@
 services:
   server:
     build: server
-    env_file:
-      - .env
     environment:
-      - DJANGO_STATIC_ROOT=/static
+      - DJANGO_DEBUG:${DJANGO_DEBUG}
+      - DJANGO_ALLOW_LOCALHOST:${DJANGO_ALLOW_LOCALHOST}
     ports:
       - "8000:8000"
     volumes:
@@ -22,7 +21,7 @@ services:
       - 80 # http
       - 443 # https
     volumes:
-        - './caddy/${RSDC_CADDYFILE}:/etc/caddy/Caddyfile'
+        - './caddy/${RSDC_CADDYFILE:-Caddyfile}:/etc/caddy/Caddyfile'
         - ./caddy/config:/config
         - ./caddy/data:/data
         - static:/static

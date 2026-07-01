@@ -11,7 +11,6 @@ RUN uv sync
 WORKDIR /app/rsdc
 
 ENV DJANGO_STATIC_ROOT='/static'
-ENV DJANGO_ALLOW_LOCALHOST='True'
 
 RUN uv run manage.py collectstatic
 
