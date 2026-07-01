@@ -4,6 +4,7 @@ services:
     environment:
       - DJANGO_DEBUG=${DJANGO_DEBUG}
       - DJANGO_ALLOW_LOCALHOST=${DJANGO_ALLOW_LOCALHOST}
+      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
     ports:
       - "8000:8000"
     volumes:
