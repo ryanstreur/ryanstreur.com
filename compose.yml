@@ -18,11 +18,10 @@ services:
       - 80 # http
       - 443 # https
     volumes:
-        - './caddy/Caddyfile:/etc/caddy/Caddyfile:ro'
+        - './caddy/Caddyfile:/etc/caddy/Caddyfile'
         - ./caddy/config:/config
         - ./caddy/data:/data
         - static:/static
-        # - ./certs:/certs
 
 volumes:
   static:
