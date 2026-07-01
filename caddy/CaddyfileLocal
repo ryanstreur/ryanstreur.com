@@ -1,4 +1,4 @@
-ryanstreur.com {
+localhost {
 	handle /static/* {
 		root * /
 		file_server

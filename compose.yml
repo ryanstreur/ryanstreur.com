@@ -1,6 +1,10 @@
 services:
   server:
     build: server
+    env_file:
+      - .env
+    environment:
+      - DJANGO_STATIC_ROOT=/static
     ports:
       - "8000:8000"
     volumes:
@@ -18,7 +22,7 @@ services:
       - 80 # http
       - 443 # https
     volumes:
-        - './caddy/Caddyfile:/etc/caddy/Caddyfile'
+        - './caddy/${RSDC_CADDYFILE}:/etc/caddy/Caddyfile'
         - ./caddy/config:/config
         - ./caddy/data:/data
         - static:/static
