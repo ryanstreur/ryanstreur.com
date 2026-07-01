@@ -2,8 +2,8 @@ services:
   server:
     build: server
     environment:
-      - DJANGO_DEBUG:${DJANGO_DEBUG}
-      - DJANGO_ALLOW_LOCALHOST:${DJANGO_ALLOW_LOCALHOST}
+      - DJANGO_DEBUG=${DJANGO_DEBUG}
+      - DJANGO_ALLOW_LOCALHOST=${DJANGO_ALLOW_LOCALHOST}
     ports:
       - "8000:8000"
     volumes:
