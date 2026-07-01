@@ -1,0 +1,29 @@
+services:
+  server:
+    build: server
+    ports:
+      - "8000:8000"
+    volumes:
+      - static:/static
+
+  caddy:
+    # https://github.com/Haxxnet/Compose-Examples/blob/main/examples/caddy/docker-compose.yml
+    image: caddy:latest
+    container_name: caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    expose:
+      - 80 # http
+      - 443 # https
+    volumes:
+        - './caddy/Caddyfile:/etc/caddy/Caddyfile:ro'
+        - ./caddy/config:/config
+        - ./caddy/data:/data
+        - static:/static
+        # - ./certs:/certs
+
+volumes:
+  static:
+    name: rsdc-static
